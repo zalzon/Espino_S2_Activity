@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<!-- 
+    1. Attribute
+        Provides additional information about elements.
+        Usually comes in name-value pairs.
+ -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Session 2</title>
+  </head>
+  <body>
+    <h1>Session 2</h1>
+    <!-- 
+        2. <abbr>
+            Defines an abbreviation or an acronym
+            Use title attribute to show the expanded form of the abbreviation
+            Inline  Element
+     -->
+    <p>
+      The <abbr title="World Wide Web Consortium">W3C</abbr> was founded on
+      October 1, 1994.
+    </p>
+    <section>
+      <h2>Attributes for &lt;td&gt; and &lt;th&gt;</h2>
+      <table style="border: 1px solid black">
+        <caption>
+          Employees
+        </caption>
+        <thead style="border: 1px solid black">
+          <tr style="border: 1px solid black">
+            <th style="border: 1px solid black">Name</th>
+            <th style="border: 1px solid black">Role</th>
+            <th style="border: 1px solid black">Age</th>
+          </tr>
+        </thead>
+        <tbody style="border: 1px solid black">
+          <tr style="border: 1px solid black">
+            <td style="border: 1px solid black">Tim Berners-Lee</td>
+            <!-- 
+                3. rowspan
+                    Specifies the number of rows you want the cell to span (cover)
+                    Possible values: any positive integer
+             -->
+            <td style="border: 1px solid black" rowspan="2">
+              Full Stack Developer
+            </td>
+            <td style="border: 1px solid black">70</td>
+          </tr>
+          <tr style="border: 1px solid black">
+            <td style="border: 1px solid black">Alan Turing</td>
+            <td style="border: 1px solid black">42</td>
+          </tr>
+          <tr style="border: 1px solid black">
+            <!-- 
+                4. colspan
+                    Specifies the number of columns you want the cell to span (cover)
+                    Possible values: positive integer
+             -->
+            <td style="border: 1px solid black" colspan="2">Larry Page</td>
+            <td style="border: 1px solid black">70</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <section>
+      <h2>Attributes for &lt;ol&gt;</h2>
+
+      <p>Technologies we are going to study in chronological order</p>
+      <!-- 
+            7. type
+                Specifies the kind of marker to use in the list: 1, A, a, I and i
+            8. reversed
+                Specifies that the list order should be reversed
+            9. start
+                Specifies the start value of an ordered list
+       -->
+      <ol type="i" start="5" reversed>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Node.js</li>
+        <li>NoSQL</li>
+      </ol>
+    </section>
+    <section>
+      <h2>Image</h2>
+      <!-- 
+            15. <figure>
+                Specifies self-contained content, like photos.
+                Block Element
+       -->
+      <figure>
+        <!-- 
+            10. img
+                Used to embed an image
+            11. src
+                Specifies the URL or relative path to the image
+            12. height
+                Specifies the height of the image
+            13. width
+                Specifies the width of the image
+            14. alt
+                Specifies an alternate text for the image, if the image does not load
+       -->
+        <img
+          src="https://hips.hearstapps.com/hmg-prod/images/cute-cat-photos-1593441022.jpg?crop=1.00xw:0.753xh;0,0.153xh&resize=1200:*"
+          height="300"
+          width="600"
+          alt="Cute orange cat"
+        />
+        <figcaption>
+          Cute
+          <!-- 
+                16. <a>
+                    Defines a hyperlink, which is used to link from one page to another
+                17. href
+                    Indicates the link's destination
+                18. target
+                    Specifies where to open the linked document
+           -->
+          <a
+            href="https://www.google.com/search?q=cute+cats&rlz=1C5CHFA_enPH1051PH1051&sxsrf=APwXEdeJajKOCTdRagA2LN_cqPd_cs_lkQ:1683164749693&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiszYOoxdr-AhVVc3AKHc42DP4Q_AUoAXoECAEQAw&biw=960&bih=944&dpr=1#imgrc=0hGYxUJe0xLamM"
+            target="_blank"
+            >cats</a
+          >
+        </figcaption>
+      </figure>
+    </section>
+    <section>
+      <h2>Form</h2>
+      <!-- 
+        20. <form>
+                Creates a form for user input.
+                Contains one or more of the following form elements: input, textarea, button, select, option, optgroup, fieldset, label, and output.
+                Block element
+       -->
+      <form action="">
+        <!-- 
+                22. <label>
+                    Defines a label for elements inside a form
+                    Inline element
+                23. for
+                    Specifies which form element a label is bound to
+         -->
+        <label for="name">Name</label>
+        <!-- 
+                21. <input>
+                    Specifies an input field where the user can enter data
+                    Displayed in several ways, depending on the value of type attribute
+                    It can be: text, email, number, password, radio, or checkbox
+                    Inline element
+         -->
+        <input type="text" placeholder="Tim" id="name" />
+        <br />
+        <label for="age">Age</label>
+        <input type="number" placeholder="70" id="age" min="18" max="75" />
+        <br />
+        <label for="email">Email Addres</label>
+        <input type="email" placeholder="tim@test.com" id="email" />
+        <br />
+        <label for="pw">Password</label>
+        <input type="password" id="pw" />
+
+        <!-- 
+            22. <fieldset>
+                    Used to group related elements in a form
+                    Draws a box around the related elements.
+                    Block element.
+         -->
+        <fieldset>
+          <!-- 
+                23. <legend>
+                    Defines a caption or title for the <fieldset> element.
+                    Block element.
+             -->
+          <legend>Type of Developer</legend>
+          <input type="radio" name="dev-type" id="front-end" />
+          <label for="front-end">Frontend Web Developer</label>
+          <br />
+          <input type="radio" name="dev-type" id="back-end" />
+          <label for="back-end">Backend Web Developer</label>
+          <br />
+          <input type="radio" name="dev-type" id="full-stack" />
+          <label for="full-stack">Full Stack Web Developer</label>
+        </fieldset>
+
+        <!-- 
+            24. <textarea>
+                    Defines a multi-line text input control.
+                    Block element.
+            25. cols
+                Specifies the width of the textarea element
+            26. rows
+                Specifies the height of the textarea element
+         -->
+        <textarea cols="30" rows="10">Comment</textarea>
+        <br />
+        <label for="gender">Gender</label>
+        <select id="gender">
+          <option>Male</option>
+          <option>Female</option>
+          <option>Non-binary</option>
+        </select>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </body>
+</html>

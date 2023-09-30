@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Session 2</title>
+  </head>
+  <body>
+    <h1>Session 2 — Activity by: Zalzon Espino</h1>
+    <hr />
+    <section>
+      <h2>5 Attributes Studied During The Session</h2>
+
+      <!-- title attribute -->
+      <section>
+        <h3>Title Attribute</h3>
+        <p>
+          A <abbr title="Central Processing Unit">CPU</abbr>, is the primary
+          component of a computer that acts as its “control center.”
+        </p>
+      </section>
+
+      <!-- style, colspan, rowspan attribute -->
+      <section>
+        <h3>Style, Colspan, Rowspan Attribute</h3>
+        <table style="border: 1px solid black">
+          <caption>
+            Book Store
+          </caption>
+          <thead style="border: 1px solid black">
+            <tr style="border: 1px solid black">
+              <th style="border: 1px solid black">BookID</th>
+              <th style="border: 1px solid black">Title</th>
+              <th style="border: 1px solid black">Author</th>
+              <th style="border: 1px solid black">Price</th>
+              <th style="border: 1px solid black">StockCount</th>
+            </tr>
+          </thead>
+          <tbody style="border: 1px solid black">
+            <tr style="border: 1px solid black">
+              <td style="border: 1px solid black">1</td>
+              <td style="border: 1px solid black">The Great Gatsby</td>
+              <td style="border: 1px solid black">F. Scott Fitzgerald</td>
+              <td style="border: 1px solid black">$10</td>
+              <td style="border: 1px solid black">20</td>
+            </tr>
+            <tr style="border: 1px solid black">
+              <td style="border: 1px solid black">2</td>
+              <td style="border: 1px solid black">1984</td>
+              <td style="border: 1px solid black">George Orwell</td>
+              <td style="border: 1px solid black" rowspan="2">$15</td>
+              <td style="border: 1px solid black">30</td>
+            </tr>
+            <tr style="border: 1px solid black">
+              <td style="border: 1px solid black">3</td>
+              <td style="border: 1px solid black">Brave New World</td>
+              <td style="border: 1px solid black">Aldous Huxley</td>
+              <td style="border: 1px solid black">25</td>
+            </tr>
+            <tr style="border: 1px solid black">
+              <td style="border: 1px solid black">4</td>
+              <td style="border: 1px solid black">Moby-Dick</td>
+              <td style="border: 1px solid black">Herman Melville</td>
+              <td style="border: 1px solid black">$13</td>
+              <td style="border: 1px solid black" rowspan="2">22</td>
+            </tr>
+            <tr style="border: 1px solid black">
+              <td style="border: 1px solid black">5</td>
+              <td style="border: 1px solid black">Pride and Prejudice</td>
+              <td style="border: 1px solid black">Jane Austen</td>
+              <td style="border: 1px solid black">$9</td>
+            </tr>
+          </tbody>
+          <tfoot style="border: 1px solid black">
+            <tr style="border: 1px solid black">
+              <td style="border: 1px solid black" colspan="3">Total Price</td>
+              <td style="border: 1px solid black" colspan="2">$47</td>
+            </tr>
+            <tr style="border: 1px solid black">
+              <td style="border: 1px solid black" colspan="3">Total Stock</td>
+              <td style="border: 1px solid black" colspan="2">97</td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+
+      <!-- type, reversed, start attribute -->
+      <section>
+        <h3>Type, Reversed, Start Attribute</h3>
+        <p>Chronological Order of A Book or Movie Plot</p>
+        <ol type="i" start="5" reversed>
+          <li>Resolution or conclusion</li>
+          <li>Climax</li>
+          <li>Development of the story and relationships</li>
+          <li>Introduction of the conflict</li>
+          <li>Introduction of the main character</li>
+        </ol>
+      </section>
+
+      <!-- src, height, width, alt attribute -->
+      <section>
+        <h3>Src, Height, Width Attribute</h3>
+        <figure>
+          <img
+            src="https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=1xw:0.74975xh;center,top&resize=1200:*"
+            height="300"
+            width="600"
+            alt="Cute Dog"
+          />
+          <figcaption>Fig.1 - Cute Dog</figcaption>
+
+          <!-- 12.Href, 13.Target Attribute -->
+          <a href="https://www.youtube.com/watch?v=aWKtAqIUEl4" target="_blank"
+            >Click Me!</a
+          >
+        </figure>
+      </section>
+
+      <!-- form -->
+      <section>
+        <h3>Form</h3>
+        <form action="index2.html" target="_blank">
+          <label for="name">Name</label>
+          <input type="text" placeholder="Zalzon" id="name" />
+          <br />
+
+          <label for="age">Age</label>
+          <input type="number" placeholder="19" id="age" min="16" max="75" />
+          <br />
+
+          <label for="email">Email Address</label>
+          <input type="email" placeholder="name@gmail.com" id="email" />
+          <br />
+
+          <label for="pw">Password</label>
+          <input type="password" id="pw" />
+
+          <fieldset>
+            <legend>Type of Developer</legend>
+            <input type="radio" name="dev-type" id="front-end" />
+            <label for="front-end">Frontend Web Developer</label>
+            <br />
+            <input type="radio" name="dev-type" id="back-end" />
+            <label for="back-end">Backend Web Developer</label>
+            <br />
+            <input type="radio" name="dev-type" id="full-stack" />
+            <label for="full-stack">Full Stack Web Developer</label>
+          </fieldset>
+
+          <textarea cols="50  " rows="10">Drop a comment!</textarea>
+          <br />
+          <label for="gender">Gender</label>
+          <select id="gender">
+            <option>Male</option>
+            <option>Female</option>
+          </select>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </section>
+
+    <section>
+      <h2>10 Additional Attributes Studied During The Session</h2>
+
+      <!-- 1 -->
+      <section>
+        <h3>Accept Attribute</h3>
+        <form action="">
+          <label for="img">Select image:</label>
+          <input type="file" id="img" name="img" accept="image/*" />
+          <input type="submit" />
+        </form>
+      </section>
+
+      <!-- 2, 3, 4, -->
+      <section>
+        <h3>Controls, Autoplay, Loop, Muted Attribute</h3>
+        <video
+          src="/dog.mp4"
+          controls
+          autoplay
+          loop
+          muted
+          height="300px"
+          width="500px"
+        ></video>
+      </section>
+
+      <!-- 5 -->
+      <section>
+        <h3>Multiple Attribute</h3>
+        <p>Try selecting more than one file when browsing for files.</p>
+
+        <form action="">
+          <label for="files">Select files:</label>
+          <input type="file" id="files" name="files" multiple /><br /><br />
+          <input type="submit" />
+        </form>
+      </section>
+
+      <!-- 6 -->
+      <section>
+        <h3>Disabled Attribute</h3>
+        <button type="button" disabled>Click Me!</button>
+      </section>
+
+      <!-- 7 -->
+      <section>
+        <h3>Hidden Attribute</h3>
+        <p>↓ ↓ You can't see the hidden paragraph ↓ ↓</p>
+        <p hidden>You can't see this paragraph because it is hidden</p>
+        <br />
+      </section>
+
+      <!-- 8 -->
+      <section>
+        <h3>MaxLength Attribute</h3>
+        <p>You can only input 10 characters, try inputting more than 10.</p>
+        <form action="">
+          Input: <input type="text" name="usrname" maxlength="10" /><br />
+        </form>
+      </section>
+
+      <!-- 9 -->
+      <section>
+        <h3>Readonly Attribute</h3>
+        <form action="">
+          <p>You can modify your First Name</p>
+          <label for="fname">First name:</label>
+          <input type="text" id="fname" name="fname" /><br /><br />
+
+          <p>You can't modify your Last Name</p>
+          <label for="lname">Last Name:</label>
+          <input
+            type="text"
+            id="lname"
+            name="lname"
+            value="Hotdog"
+            readonly
+          /><br /><br />
+        </form>
+      </section>
+
+      <!-- 10 -->
+      <section>
+        <h3>Required Attribute</h3>
+        <form action="">
+          <p>Try Submitting without Choosing A Fruit.</p>
+          <label for="fruits">Choose a Fruit:</label>
+          <select name="fruits" id="fruits" required>
+            <option value="">None</option>
+            <option value="banana">Banana</option>
+            <option value="orange">Orange</option>
+            <option value="mango">Mango</option>
+            <option value="apple">Apple</option>
+          </select>
+          <br /><br />
+          <input type="submit" value="Submit" />
+        </form>
+      </section>
+    </section>
+  </body>
+</html>
